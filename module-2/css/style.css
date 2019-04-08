@@ -64,27 +64,27 @@ html {
 }
 
 #image1{
-    background-image: url(/img/1.png);
+    background-image: url(../img/1.png);
 }
 
 #image2{
-    background-image: url(/img/2.png);
+    background-image: url(../img/2.png);
 }
 
 #image3{
-    background-image: url(/img/3.png);
+    background-image: url(../img/3.png);
 }
 
 #image4{
-    background-image: url(/img/4.png);
+    background-image: url(../img/4.png);
 }
 
 #image5{
-    background-image: url(/img/5.png);
+    background-image: url(../img/5.png);
 }
 
 #image6{
-    background-image: url(/img/6.png);
+    background-image: url(../img/6.png);
 }
 
 .blok p{
