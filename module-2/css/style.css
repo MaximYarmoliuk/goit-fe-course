@@ -11,18 +11,22 @@ html {
 .container{
     width: 900px;
     margin: 0 auto;
-    font-size: 0;
     color: #626262
 }
 .navigation-list {
     text-align: center;
     vertical-align: middle;
+    font-size: 0;
+}
+
+.navigation-list a{
+    display: block;
     font-size: 14px;
 }
 
-.nav-page{
-    margin-top: 75px;
-    margin-bottom: 120px;
+header{
+    padding-top: 75px;
+    padding-bottom: 120px;
 }
 
 .navigation-list li {
@@ -32,6 +36,7 @@ html {
 .navigation-list li:not(:last-child) {
     margin-right: 100px;
 }
+
 .navigation-list li a {
     text-decoration: none;
     color: rgba(98, 98, 98, 255);
@@ -43,6 +48,10 @@ html {
     color: #8ccef8;
 }
 
+.container section{
+    font-size: 0;
+}
+
 .blok {
     width: 420px;
     display: inline-block;
@@ -50,44 +59,22 @@ html {
     font-size: 14px;
 }
 
+.blok1{
+    margin-bottom: 130px;
+}
+
 .blok:nth-child(2n){
     margin-right: 0;
 }
 
-.blok .background{
+.container img{
     width: 420px;
     height: 280px;
     margin: 0 auto;
     margin-bottom: 32px;
-    background-size: cover;
-    background-position: center;
 }
 
-#image1{
-    background-image: url(../img/1.png);
-}
-
-#image2{
-    background-image: url(../img/2.png);
-}
-
-#image3{
-    background-image: url(../img/3.png);
-}
-
-#image4{
-    background-image: url(../img/4.png);
-}
-
-#image5{
-    background-image: url(../img/5.png);
-}
-
-#image6{
-    background-image: url(../img/6.png);
-}
-
-.blok p{
+.blok .name{
     margin-bottom: 28px;
 }
 
@@ -104,16 +91,17 @@ html {
     font-size: 30px;
 }
 
-.blok .last{
-    margin-bottom: 130px;
-}
-
 .blok .last-list{
 margin-bottom: 54px;
 }
 
+.container button{
+    text-align: center;
+}
+
 .my-button{
     text-align: center;
+    padding-bottom: 70px;
 }
 
 .container button{
@@ -123,6 +111,5 @@ margin-bottom: 54px;
     background-color: white;
     color: #626262;
     border-color: #626262;
-    margin-bottom: 70px;
     cursor: pointer;
 }
