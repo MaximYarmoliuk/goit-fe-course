@@ -186,7 +186,8 @@ float: left;
 .li-news img{
   margin-bottom: 14px;
   height: 264px;
-  width: 350px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .li-news h3{
