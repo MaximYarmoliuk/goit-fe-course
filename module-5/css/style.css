@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,900');
+
 .clearfix::after{
   display: table;
   content: "";
@@ -13,7 +15,7 @@
 .container{
   width: 1110px;
   margin: 0 auto;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
 }
 
 .container a{
@@ -29,6 +31,8 @@ float: left;
   width: 467px;
   font-size: 14px;
   margin-top: 5px;
+  font-family: 'Open Sans';
+  font-weight: bold;
 }
 
 .site-navigation li{
@@ -102,18 +106,20 @@ float: left;
   width: 738px;
   text-transform: uppercase;
   margin-left: 80px;
+  font-family: 'Roboto';
 }
 
 .big-text{
   color: white;
   font-size: 53px;
   padding-bottom: 26px;
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 .small-text{
   color: #f6f6f6;
   font-size: 22px;
+  font-weight: 300;
 }
 
 .slaider-box{
@@ -135,7 +141,9 @@ main{
   color: #515151;
   text-align: center;
   text-transform: uppercase;
-  font-weight: bolder;
+  margin-bottom: 80px;
+  font-family: 'Roboto';
+  font-weight: 900;
 }
 
 .section-name::after{
@@ -145,7 +153,6 @@ main{
   height: 7px;
   margin: 0 auto;
   margin-top: 32px;
-  margin-bottom: 80px;
   background-color: #1abc9c;
 }
 
@@ -155,6 +162,7 @@ main{
   height: 322px;
   display: inline-block;
   margin-right: 31px;
+  object-fit: cover;
 }
 
 .card:last-child{
@@ -164,28 +172,34 @@ main{
 .card-top{
   height: 282px;
   width: 254px;
-  background-size: cover;
 }
 
 .card-top-one{
   float: left;
+  height: 282px;
   width: 100%;
-  background-image: url(../img/3.png);
+  object-fit: cover;
 }
 
 .card-top-two{
   float: left;
-  background-image: url(../img/4.png);
+  height: 282px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .card-top-three{
   float: left;
-  background-image: url(../img/5.png);
+  height: 282px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .card-top-four{
   float: left;
-  background-image: url(../img/6.png);
+  height: 282px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .card-top-overlay{
@@ -193,8 +207,9 @@ main{
   height: 263px;
   width: 234px;
   background-color:rgba(114, 114, 114, 0.7);
-  border: 10px solid white;
+  border: 10px solid rgba(255, 255, 255, 0.3);
   position: relative;
+  background-clip: padding-box;
 }
 
 .icon-list{
@@ -266,6 +281,11 @@ main{
   background-image: url(../img/14.png);
 }
 
+.buy span{
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+
 .card:hover .card-top-overlay{
   display: block;
 }
@@ -279,6 +299,8 @@ main{
   height: 40px;
   width: 254px;
   background-color: #323232;
+  font-family: 'Roboto';
+  font-weight: 900;
 }
 
 .name{
@@ -319,12 +341,19 @@ main{
   position: relative;
 }
 
-.page-footer img{
+.page-footer p{
   display: block;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+
+.page-footer span{
+  color: #46bfa9;
 }
 
 
