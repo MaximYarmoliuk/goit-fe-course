@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400');
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 1200px;
+}
+
+.navigation{
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 98px;
+}
+
+
+.navigation-list{
+    width: 490px;
+    display: flex;  
+    justify-content: space-between;
+    
+}
+
+.navigation-list li{
+    height: 14px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.navigation-list a{
+    text-decoration: none;
+    color: #95e1d3;
+    font-family: "Montserrat";
+    transition: color 200ms linear;
+}
+
+.navigation-list a::after{
+    content: "";
+    margin: 0 auto;
+    margin-top: 12px;
+    width: 100%;
+    height: 3px;
+    background-color: #f38181;
+    display: block;
+    opacity: 0;
+    transition: all 200ms linear;
+}
+
+.navigation-list a:hover,
+.navigation-list a:focus{
+    color: #f38181; 
+}
+
+.navigation-list a:hover:after{
+    opacity: 1;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.company{
+    padding-bottom: 92px;
+    width: 1150px;
+}
+
+.about-company{
+    text-align: center;
+    font-family: "Kaushan Script";
+    font-size: 24px;
+    color: rgba(51, 51, 51, 255);
+    margin-bottom: 22px;
+}
+
+.company h2{
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 255);
+}
+
+.company h2::after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin-top: 42px;
+    margin-bottom: 66px;
+}
+
+.company-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.company-list li{
+    width: 350px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.company-list li:nth-child(n+3){
+    margin-bottom: 0px;
+}
+
+.company-list img{
+    width: 32px;
+    height: 32px;
+    margin-right: 28px;
+}
+
+.company-list h3{
+    font-family: "Montserrat";
+    color: rgba(51, 51, 51, 255);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.company-list p{
+    font-family: "Roboto";
+    font-size: 15px;
+    color: rgba(153, 153, 153, 255);
+}
+
+.about-team{
+    text-align: center;
+    font-family: "Kaushan Script";
+    font-size: 24px;
+    color: rgba(51, 51, 51, 255);
+    margin-bottom: 22px;
+}
+
+.team{
+    padding-bottom: 82px;
+    margin: 0;
+}
+
+.team h2{
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 255);
+}
+
+.team h2::after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin-top: 42px;
+    margin-bottom: 46px;
+}
+
+.introduction{
+    font-family: "Roboto";
+    font-size: 15px;
+    color: rgba(153, 153, 153, 255);
+    text-align: center;
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+.our-team{
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-team-list{
+    text-align: center;
+    position: relative;
+}
+
+.our-team-list img{
+    margin-bottom: 30px;
+}
+
+.full-name{
+    font-family: "Montserrat";
+    color: rgba(51, 51, 51, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.position{
+    font-size: 15px;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-style: italic;
+    color: rgba(153, 153, 153, 255);  
+}
+
+.team-overlay{
+    height: 473px;
+    width: 383px;
+    display: none;
+    position: absolute;
+    left: 0;
+    background-image: linear-gradient(to top, rgba(241, 216, 135, 0.9), rgba(239, 137, 138, 0.9));
+    box-shadow: 9px 9px #95e1d3;
+}
+
+.team-overlay ul{
+    width: 224px;
+    height: 56px;
+    background-color: #fce38a;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+}
+
+.team-overlay li{
+    display: flex;
+    width: 56px;
+    height: 56px;
+    border-right: 1px solid #f38181; 
+}
+
+.team-overlay li:last-child{
+    border-right: 0;
+}
+
+.team-overlay a{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;  
+    background-position: center;
+    transition: background-color 200ms linear;
+}
+
+.facebook{
+    background-image: url(../img/facebook@1X.png);
+}
+
+.twitter{
+    background-image: url(../img/twitter@1X.png);
+}
+
+.pinterest{
+    background-image: url(../img/pinterest@1X.png);
+}
+
+.instagram{
+    background-image: url(../img/instagram@1X.png);
+} 
+
+
+@keyframes go-left{
+    0% { 
+        left: 0;
+    }
+    100% {
+        left: -9px;
+    }
+}
+
+@keyframes go-top{
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -9px;
+    }
+}
+
+.our-team-list:hover .team-overlay,
+.our-team-list:focus .team-overlay{
+    animation: go-left 200ms linear, go-top 200ms linear;
+    display: inline-block;
+    left: -9px;
+    top: -9px;
+}
+
+.our-team-list:hover .team-picture,
+.our-team-list:hover .team-picture{
+    animation: go-left 200ms linear, go-top 200ms linear;
+    position: relative;
+    left: -9px;
+    top: -9px;
+}
+
+
+.team-overlay a:hover,
+.team-overlay a:focus{
+    background-color: #95e1d3;
+}
+
+footer hr{
+    width: 100%;
+    background-color: #e5e5e5;
+    height: 1px;
+    border: 0;
+    margin: 0;
+}
+
+.footer-information{
+    width: 100%;
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-information p{
+    font-family: "Montserrat";
+    color: rgba(51, 51, 51, 255);
+    font-size: 14px;
+}
+
+.footer-information span{
+    color: #f38181;
+}
+
+.footer-button{
+    display: flex;
+    width: 380px;
+    height: 40px;
+}
+
+.footer-button input{
+    width: 228px;
+    height: 38px;
+    padding: 0;
+    border: 1px solid #e7e7e7;
+    color: rgba(204, 204, 204, 255);
+    font-family: "Roboto";
+    font-style: italic;
+    font-size: 15px;
+    padding-left: 13px;
+}
+
+.footer-button a{
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: rgba(255, 255, 255, 255);
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    background-color: #95e1d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
