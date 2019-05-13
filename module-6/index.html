@@ -12,10 +12,9 @@
    
  <header>
      <nav class="navigation container">
-         <div class="navigation-logo">
+         <a href="" class="navigation-logo">
              <img src="img/logo.png" alt="site-logo">
-         </div>
-         <div class="main-navigation-list">
+         </a>
              <ul class="navigation-list">
                  <li><a href="">about</a></li>
                  <li><a href="">service</a></li>
@@ -23,7 +22,6 @@
                  <li><a href="">blog</a></li>
                  <li><a href="">contact</a></li>
              </ul>
-         </div>
      </nav>
  </header>
 
@@ -32,43 +30,37 @@
     <p class="about-company">We work with</p>
     <h2>amazing services</h2>
     <ul class="company-list">
-        <li>
-            <img src="img/ALARM@1X.png" alt="">
+        <li class="alarm">
             <div>
                 <h3>Photography</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
         </li>
-        <li>
-            <img src="img/LINEGRAPH@1X.png" alt="">
+        <li class="linegraph">
             <div>
                 <h3>Web Design</h3>
                 <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
         </li>
-        <li>
-            <img src="img/COMPUTER_OK@1X.png" alt="">
+        <li class="computer">
             <div>
                 <h3>Creativity</h3>
                 <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
             </div>
         </li>
-        <li>
-            <img src="img/BOOK2@1X.png" alt="">
+        <li class="book">
             <div>
                 <h3>seo</h3>
                 <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
             </div>
         </li>
-        <li>
-            <img src="img/HOME@1X.png" alt="">
+        <li class="home">
             <div>
                 <h3>Css/Html</h3>
                 <p>Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
             </div>
         </li>
-        <li>
-            <img src="img/IMAGE@1X.png" alt="">
+        <li class="image">
             <div>
                 <h3>digital</h3>
                 <p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
@@ -126,7 +118,13 @@
         <hr>
         <div class="footer-information">
         <p>© 2016 MoGo free PSD template by <span>Laaqiq</span></p>
-        <div class="footer-button"><input type="text" placeholder="Your Email..."><a href="">subscribe</a></div>
+        <div class="footer-button">
+            <form action="#" method="GET">
+            <label for="id_input"></label>
+            <input type="email" name="email" placeholder="Your Email..." id="id_input">
+            <input type="submit" value="subscribe">
+        </form>
+        </div>
         </div>
     </footer>
 </main>

@@ -21,6 +21,7 @@ header{
 .navigation-list{
     width: 490px;
     display: flex;  
+    flex-wrap: wrap;
     justify-content: space-between;
     
 }
@@ -68,7 +69,7 @@ main{
 
 .company{
     padding-bottom: 92px;
-    width: 1150px;
+    max-width: 1150px;
 }
 
 .about-company{
@@ -86,6 +87,7 @@ main{
     font-weight: bold;
     text-transform: uppercase;
     color: rgba(51, 51, 51, 255);
+    margin-bottom: 66px;
 }
 
 .company h2::after{
@@ -96,7 +98,6 @@ main{
     height: 3px;
     background-color: #f38181;
     margin-top: 42px;
-    margin-bottom: 66px;
 }
 
 .company-list{
@@ -111,14 +112,51 @@ main{
     margin-bottom: 100px;
 }
 
+.company-list div{
+    padding-left: 60px;
+    position: relative;
+}
+
 .company-list li:nth-child(n+3){
     margin-bottom: 0px;
 }
 
-.company-list img{
+.company-list div::before{
+    content: '';
+    display: inline-block;
     width: 32px;
+    position: absolute;
+    left: 0;
+}
+
+.alarm div::before{
+    background-image: url(../img/ALARM@1X.png);
+    height: 31px;
+}
+
+.linegraph div::before{
+    background-image: url(../img/LINEGRAPH@1X.png);
     height: 32px;
-    margin-right: 28px;
+}
+
+.computer div::before{
+    background-image: url(../img/COMPUTER_OK@1X.png);
+    height: 28px;
+}
+
+.book div::before{
+    background-image: url(../img/BOOK2@1X.png);
+    height: 32px;
+}
+
+.home div::before{
+    background-image: url(../img/HOME@1X.png);
+    height: 31px;
+}
+
+.image div::before{
+    background-image: url(../img/IMAGE@1X.png);
+    height: 32px;
 }
 
 .company-list h3{
@@ -208,9 +246,8 @@ main{
 }
 
 .team-overlay{
-    height: 473px;
-    width: 383px;
-    display: none;
+   
+    opacity: 0;
     position: absolute;
     left: 0;
     background-image: linear-gradient(to top, rgba(241, 216, 135, 0.9), rgba(239, 137, 138, 0.9));
@@ -225,6 +262,7 @@ main{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    opacity: 1;
     display: flex;
 }
 
@@ -282,12 +320,24 @@ main{
     }
 }
 
+@keyframes opacity{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .our-team-list:hover .team-overlay,
 .our-team-list:focus .team-overlay{
-    animation: go-left 200ms linear, go-top 200ms linear;
+    height: 473px;
+    width: 383px;
+    animation: go-left 200ms linear, go-top 200ms linear, opacity 200ms;
     display: inline-block;
     left: -9px;
     top: -9px;
+    opacity: 1;
 }
 
 .our-team-list:hover .team-picture,
@@ -330,13 +380,13 @@ footer hr{
     color: #f38181;
 }
 
-.footer-button{
+.footer-button form{
     display: flex;
     width: 380px;
     height: 40px;
 }
 
-.footer-button input{
+#id_input{
     width: 228px;
     height: 38px;
     padding: 0;
@@ -348,7 +398,7 @@ footer hr{
     padding-left: 13px;
 }
 
-.footer-button a{
+.footer-button input[type="submit"] {
     font-family: "Montserrat";
     font-weight: bold;
     color: rgba(255, 255, 255, 255);
