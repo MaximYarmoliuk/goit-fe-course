@@ -1,17 +1,20 @@
-body{
-    width: 1400px;
-}
 
 .container{
-    padding: 0 230px;
+    width: 940px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .site-navigation{
-    margin-top: 44px;
-    margin-bottom: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 44px;
+    padding-bottom: 120px;
 }
 
 .navigation-list{
@@ -33,6 +36,7 @@ body{
 
 
 .navigation-list a{
+    display: block;
     text-decoration: none;
     color: #000000;
 }
@@ -50,9 +54,14 @@ margin-right: 0;
 }
 
 .section-services{
+    padding-bottom: 120px;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.section-services div{
     display: flex;
     flex-direction: column;
-    padding-bottom: 120px;
 }
 
 .services-name{
@@ -136,11 +145,25 @@ margin-right: 0;
 }
 
 .section-contact{
+    width: 100%;
     padding-top: 110px;
     background-color: #222222;
+    padding-bottom: 115px;
+    background-image: url(../img/MapImage@1X.png);
+    background-repeat: no-repeat;
+    background-position: 100% 130px;
+}
+
+.section-contact div{
     display: flex;
     flex-direction: column;
-    position: relative;
+}
+
+.map{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    z-index: 0;
 }
 
 .contact-name{
@@ -246,7 +269,6 @@ margin-right: 0;
     color: rgba(187, 187, 187, 255);
     resize: none;
     border-color: transparent;
-    z-index: 1;
 }
 
 #id_submit{
@@ -257,14 +279,8 @@ margin-right: 0;
     margin-top: 30px;
     padding-left: 0;
     font-size: 18px;
-    margin-bottom: 115px;
     cursor: pointer;
 }
 
-.map{
-    position: absolute;
-    right: 0;
-    bottom: 20px;
-    z-index: 0;
-}
+
 
