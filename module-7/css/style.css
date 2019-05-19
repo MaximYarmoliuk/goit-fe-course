@@ -1,0 +1,270 @@
+body{
+    width: 1400px;
+}
+
+.container{
+    padding: 0 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-navigation{
+    margin-top: 44px;
+    margin-bottom: 120px;
+}
+
+.navigation-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navigation-list li{
+    display: flex;
+    margin-right: 40px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Montserrat', 'Alfa Slab One', "bilbo", "asset";
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+.navigation-list a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.navigation-list li:last-child{
+margin-right: 0;
+}
+
+.navigation-list li:hover a{
+    color: #fed136;
+}
+
+.navigation-list a:focus{
+    color: #fed136;
+}
+
+.section-services{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 120px;
+}
+
+.services-name{
+    color: rgba(34, 34, 34, 255);
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+    font-family: 'Roboto Slab', 'Montserrat', 'Alfa Slab One', 'archivo';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.about-services{
+    color: rgba(119, 119, 119, 255);
+    font-size: 16px;
+    margin-bottom: 80px;
+    font-family: 'Roboto Slab', 'bilbo', 'Alfa Slab One', 'archivo';
+    font-style: italic;
+    font-weight: 400;
+}
+
+.services-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.services-list-item{
+    width: 274px;
+    text-align: center;
+}
+
+.services-list-item h3{
+    font-size: 18px;
+    color: rgba(34, 34, 34, 255);
+    margin-bottom: 18px;
+    padding-top: 94px;
+    font-family: 'Roboto Slab', 'Asset', 'Montserrat', 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.services-list-item p{
+    font-size: 14px;
+    color: rgba(119, 119, 119, 255);
+    font-family: 'Roboto Slab', 'bilbo', 'Alfa Slab One', 'archivo';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.services-list-item div{
+    position: relative;
+}
+
+.services-list-item div:before{
+    content: "";
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid #fed136;
+    border-radius: 50%;
+    box-sizing: border-box;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.basket::before{
+    background-image: url(../img/Icon-Basket.svg);
+}
+
+.laptop::before{
+    background-image: url(../img/Icon-Laptop.svg);
+}
+
+.locked::before{
+    background-image: url(../img/Icon-Locked.svg);
+}
+
+.section-contact{
+    padding-top: 110px;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.contact-name{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Roboto Slab', 'Montserrat', 'Alfa Slab One', 'archivo';
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+
+.about-contact{
+    font-size: 16px;
+    color: rgba(119, 119, 119, 255);
+    font-family: 'Roboto Slab', 'bilbo', 'Alfa Slab One', 'archivo';
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 75px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-form div{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input{
+    box-sizing: border-box;
+    padding: 0;
+    border-radius: 5px;
+    border-color: transparent;
+    text-transform: uppercase;
+    padding-left: 20px;
+    font-size: 14px;
+    font-family: 'Montserrat', 'Alfa Slab One', "bilbo", "asset";
+    font-style: normal;
+    font-weight: 700;
+    color: rgba(187, 187, 187, 255);
+}
+
+.contact-form input:required:valid{
+    outline: green solid  1px;
+    -moz-outline-radius: 5px;
+}
+
+.contact-form input:required:invalid{
+    outline: red solid 1px;
+    -moz-outline-radius: 5px;
+}
+
+.contact-form textarea:required:valid{
+    outline: green solid 1px;
+    -moz-outline-radius: 5px;
+}
+
+.contact-form textarea:required:invalid{
+    outline: red solid 1px;
+    -moz-outline-radius: 5px;
+}
+
+
+#id_name{
+    width: 455px;
+    height: 50px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+#id_email{
+    width: 455px;
+    height: 50px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+#id_subject{
+    width: 455px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+.contact-form textarea{
+    width: 455px;
+    height: 210px;
+    box-sizing: border-box;
+    padding: 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 14px;
+    font-family: 'Montserrat', 'Alfa Slab One', "bilbo", "asset";
+    font-style: normal;
+    font-weight: 700;
+    color: rgba(187, 187, 187, 255);
+    resize: none;
+    border-color: transparent;
+    z-index: 1;
+}
+
+#id_submit{
+    width: 240px;
+    height: 66px;
+    background-color: #fed136;
+    color: #ffffff;
+    margin-top: 30px;
+    padding-left: 0;
+    font-size: 18px;
+    margin-bottom: 115px;
+    cursor: pointer;
+}
+
+.map{
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    z-index: 0;
+}
+
