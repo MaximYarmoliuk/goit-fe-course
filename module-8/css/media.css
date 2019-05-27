@@ -84,6 +84,7 @@
 
 @media (min-width: 768px){
     .main-navigation{
+        display: flex;
     width: 670px;
     justify-content: space-between;
     align-items: center;
@@ -99,7 +100,7 @@
 
     .site-navigation-list{
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
     }
 
     .company{

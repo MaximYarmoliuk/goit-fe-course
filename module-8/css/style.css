@@ -3,7 +3,7 @@
 header{
     width: 100%;
     height: auto;
-    background-image: url(/img/Background.png);
+    background-image: url(../img/Background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgba(0,0,0,0.5);
@@ -150,19 +150,19 @@ box-sizing: content-box;
 }
 
 .Bradley-img{
-    background-image: url(/img/Bradley.png);
+    background-image: url(../img/Bradley.png);
 }
 
 .Lucas-img{
-    background-image: url(/img/Lucas.png);
+    background-image: url(../img/Lucas.png);
 }
 
 .Heather-img{
-    background-image: url(/img/Heather.png);
+    background-image: url(../img/Heather.png);
 }
 
 .Hunter-img{
-    background-image: url(/img/Bradley-girl.png);
+    background-image: url(../img/Bradley-girl.png);
 }
 
 
