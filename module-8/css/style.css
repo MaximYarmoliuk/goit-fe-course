@@ -149,22 +149,6 @@ box-sizing: content-box;
     background-color:#4e73db;
 }
 
-.Bradley-img{
-    background-image: url(../img/Bradley.png);
-}
-
-.Lucas-img{
-    background-image: url(../img/Lucas.png);
-}
-
-.Heather-img{
-    background-image: url(../img/Heather.png);
-}
-
-.Hunter-img{
-    background-image: url(../img/Bradley-girl.png);
-}
-
 
 .partner-list-item h3{
     padding-top: 20px;
@@ -187,6 +171,7 @@ box-sizing: content-box;
     background-color: white;
     border-radius: 20px;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .section-button a{
