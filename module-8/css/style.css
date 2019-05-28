@@ -36,7 +36,7 @@ header{
     width: 100%;
 }
 
-.site-navigation-list li{
+.site-navigation-list a{
     box-sizing: border-box;
     height: 36px;
     width: 90px;
@@ -48,7 +48,7 @@ header{
     cursor: pointer;
 }
 
-.site-navigation-list li:hover{
+.site-navigation-list a:hover{
     border: 2px solid white;
 }
 
