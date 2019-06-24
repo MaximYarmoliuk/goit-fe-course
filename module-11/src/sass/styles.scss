@@ -1,0 +1,27 @@
+/*
+   Import partials below
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400|Kaushan+Script:400&display=swap');
+
+@import './helpers/variables.scss';
+@import './helpers/placeholders.scss';
+@import './helpers/mixins.scss';
+// @import './normalize';
+@import './base.scss';
+
+/* Components */
+@import './components/container.scss';
+@import './components/description.scss';
+@import './components/text.scss';
+@import './components/title.scss';
+@import './components/head.scss';
+@import './components/navigation.scss';
+@import './components/head-section.scss';
+@import './components/main-section.scss';
+@import './components/company.scss';
+@import './components/list-company.scss';
+@import './components/team.scss';
+@import './components/team-overlay.scss';
+@import './components/team-list.scss';
+@import './components/foot.scss';
+@import './components/btn.scss';

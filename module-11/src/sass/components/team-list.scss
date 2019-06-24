@@ -1,0 +1,17 @@
+.team-list {
+  &__name {
+    font-family: $Mont-family;
+    color: $text-color;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  &__position {
+    font-size: 15px;
+    font-family: $Rob-family;
+    font-weight: 300;
+    font-style: italic;
+    color: $secondary-text-color;
+  }
+}

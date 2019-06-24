@@ -1,0 +1,4 @@
+.main-sections {
+  @include center-flex('ver');
+  flex-direction: column;
+}

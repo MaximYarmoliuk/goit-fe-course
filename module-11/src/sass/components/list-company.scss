@@ -1,0 +1,76 @@
+.list-company {
+  &__item {
+    width: 350px;
+    display: flex;
+    margin-bottom: 100px;
+
+    &:nth-child(n + 4) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__entry {
+    padding-left: 60px;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 32px;
+      position: absolute;
+      left: 0;
+    }
+
+    &--alarm::before {
+      background: url(../images/ALARM.png) no-repeat;
+      height: 31px;
+    }
+
+    &--linegraph::before {
+      background: url(../images/LINEGRAPH.png) no-repeat;
+      height: 32px;
+    }
+
+    &--computer::before {
+      background: url(../images/COMPUTER_OK.png) no-repeat;
+      height: 28px;
+    }
+
+    &--book::before {
+      background: url(../images/BOOK2.png) no-repeat;
+      height: 32px;
+    }
+
+    &--home::before {
+      background: url(../images/HOME.png) no-repeat;
+      height: 31px;
+    }
+
+    &--image::before {
+      background: url(../images/IMAG.png) no-repeat;
+      height: 32px;
+    }
+  }
+
+  &__title {
+    font-family: $Mont-family;
+    font-weight: normal;
+    color: $text-color;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 15px;
+    color: $secondary-text-color;
+  }
+}
+
+// $icons: ALARM, LINEGRAPH, COMPUTER_OK, BOOK2, HOME, IMAG;
+
+// @include generate-pseudo-icons(
+//   'list-company__entry--',
+//   $icons,
+//   '../images/',
+//   'png'
+// );

@@ -1,0 +1,37 @@
+.company {
+  padding-bottom: 92px;
+  padding-top: 50px;
+  max-width: 1150px;
+
+  &__text {
+    text-align: center;
+    font-size: 24px;
+    color: $text-color;
+    margin-bottom: 22px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $text-color;
+    margin-bottom: 66px;
+
+    &::after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 60px;
+      height: 3px;
+      background-color: $line-color;
+      margin-top: 42px;
+    }
+  }
+
+  &__list {
+    @extend %list;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

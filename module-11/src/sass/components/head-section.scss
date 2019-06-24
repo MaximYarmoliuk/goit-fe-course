@@ -1,0 +1,40 @@
+.head-section {
+  @include center-flex('ver');
+  flex-direction: column;
+  padding-bottom: 230px;
+
+  &__name {
+    font-size: 72px;
+    color: $white-color;
+    margin-top: 0;
+    margin-bottom: 42px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 150px;
+    color: $white-color;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 124px;
+    font-weight: bold;
+  }
+
+  &__link {
+    @extend %link;
+    @include center-flex('all');
+    width: 160px;
+    height: 40px;
+    border: 3px white solid;
+    box-sizing: border-box;
+    transition: 0.2s;
+    font-weight: bold;
+
+    &:hover,
+    &:focus {
+      background-color: $head-background-color;
+      color: $hover-color;
+      transition: 0.2s;
+    }
+  }
+}

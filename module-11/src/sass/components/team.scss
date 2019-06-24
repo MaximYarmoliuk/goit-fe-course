@@ -1,0 +1,83 @@
+.team {
+  padding-bottom: 82px;
+  margin: 0;
+
+  &__name {
+    text-align: center;
+    font-size: 24px;
+    color: $text-color;
+    margin-bottom: 22px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $text-color;
+
+    &::after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      width: 60px;
+      height: 3px;
+      background-color: $line-color;
+      margin-top: 42px;
+      margin-bottom: 46px;
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    color: $secondary-text-color;
+    text-align: center;
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+  }
+
+  &__entry {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__list {
+    text-align: center;
+    position: relative;
+
+    &--overlay {
+      opacity: 0;
+      position: absolute;
+      left: 0;
+      background-image: linear-gradient(
+        to top,
+        rgba(241, 216, 135, 0.9),
+        rgba(239, 137, 138, 0.9)
+      );
+      box-shadow: 9px 9px $overlay-color;
+    }
+
+    &:hover .team__list--overlay,
+    &:focus .team__list--overlay {
+      height: 473px;
+      width: 383px;
+      animation: go-left 200ms linear, go-top 200ms linear, opacity 200ms;
+      display: inline-block;
+      left: -9px;
+      top: -9px;
+      opacity: 1;
+    }
+
+    &:hover .team__picture,
+    &:hover .team__picture {
+      animation: go-left 200ms linear, go-top 200ms linear;
+      position: relative;
+      left: -9px;
+      top: -9px;
+    }
+  }
+
+  &__picture {
+    margin-bottom: 30px;
+  }
+}

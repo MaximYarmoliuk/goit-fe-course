@@ -1,0 +1,35 @@
+.btn {
+  &__form {
+    display: flex;
+    width: 380px;
+    height: 40px;
+  }
+
+  &__email {
+    width: 228px;
+    height: 38px;
+    padding: 0;
+    border: 1px solid $btn-border-color;
+    color: $mail-color;
+    font-family: $Rob-family;
+    font-style: italic;
+    font-size: 15px;
+    padding-left: 13px;
+  }
+
+  &__submit {
+    font-family: $Mont-family;
+    font-weight: bold;
+    color: $white-color;
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    background-color: $overlay-color;
+    @include center-flex($type: 'all');
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
